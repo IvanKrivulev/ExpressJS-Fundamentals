@@ -1,0 +1,22 @@
+{
+  "name": "shop-stop",
+  "version": "0.0.1",
+  "description": "shop stop exercise project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Ivan Krivulev",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-clean-css": "3.9.4",
+    "gulp-rename": "1.2.3",
+    "multiparty": "^4.1.4",
+    "shortid": "^2.2.8"
+  }
+}
