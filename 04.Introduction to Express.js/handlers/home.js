@@ -12,7 +12,14 @@ module.exports.index = (req, res) => {
                   .includes(queryData.query)
           )
       }
+      let data = { products: products };
+      if (req.query.error) {
+          data.error = req.query.error;
+      } else if (req.query.success) {
+          data.success = req.query.success;
+      }
+      res.render('home/index', data);
 
-      res.render('home/index', {products: products});
+      //res.render('home/index', {products: products});
   })
 };
